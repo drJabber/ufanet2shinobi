@@ -1,0 +1,18 @@
+---
+general:
+    update_timeout: 86340
+    retry_timeout: 30
+    log_level: WARNING
+    log_file: /opt/app/logs/u2sa.log
+
+ufanet_config:
+    user: "UFANET-USER"
+    password: "UFANET-PASSWORD"
+    service_url: "https://dom.ufanet.ru"
+    cloud_url: "https://cloud.ucams.ru"
+
+shinobi_config:
+    cctv_url: "https://192.168.16.2:8080"
+    api_key: "SHINOBI-API-KEY"
+    group_key: "SHINOBI-GROUP-KEY"
+    

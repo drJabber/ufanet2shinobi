@@ -1,0 +1,10 @@
+.vscode/
+.venv/
+venv/
+trash/
+*.log
+*.zip
+u2s-config.yaml
+ufanet.py
+ufanet2shinobi.py
+1000-shinoby.monitors

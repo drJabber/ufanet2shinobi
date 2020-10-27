@@ -1,0 +1,18 @@
+version: '3.5'
+
+services:
+  u2sa:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+
+#    env_file:
+#      - ./docker/tor_privoxy.env
+  
+    image: u2sa:v0.1
+    container_name: ufanet_shinobi_updater
+
+    volumes:
+      - ./app/config/u2s-config.yaml:/opt/app/config/u2s-config.yaml
+
+
