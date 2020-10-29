@@ -1,0 +1,13 @@
+[Unit]
+Description=Ufanet to shinobi update service
+After=docker.service
+Wants=network-online.target docker.socket
+Requires=docker.socket
+ 
+[Service]
+Restart=always
+ExecStart=/usr/bin/docker-compose --file /opt/u2sa/docker-compose.yml up
+ExecStop=/usr/bin/docker-compose --file /opt/u2sa/docker-compose.yml down
+ 
+[Install]
+WantedBy=multi-user.target
